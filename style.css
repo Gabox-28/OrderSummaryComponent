@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container{
+    background: #e0e8ff;
+    width: 1440px;
+    height: 900px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pattern-desktop{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.top-img img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card{
+    width: 450px;
+    height: 700px;
+    background: white;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.order-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title{
+    margin-top: 40px;
+    font-size: calc(26rem/16);
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.description{
+    text-align: center;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    width: 70%;
+    margin-top: 25px;
+    line-height: 25px;
+}
+
+.order-plan{
+    background: hsl(225, 100%, 98%);
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px 0;
+    border-radius: 12px;
+}
+
+.plan{
+    display: flex;
+    align-items: center;
+}
+
+.plan-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.plan-name{
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 5px;
+}
+
+.plan-price{
+    color: hsl(224, 23%, 55%);
+}
+
+.change{
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+
+.change:hover{
+    color: #7870cb;
+    text-decoration: none;
+}
+
+.button{
+    width: 80%;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.payment-button{
+    background: hsl(245, 75%, 52%);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 12px;
+    font-weight: 700;
+    box-shadow: 0 5px 10px 5px hsl(225, 100%, 94%);
+}
+
+.payment-button:hover{
+    background: #766cf1;
+}
+
+.cancel-button{
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+}
+
+.cancel-button:hover{
+    color: #202a3d;
+}
+
+@media(max-width: 1440px){
+    .main-container{
+        height: 100vh;
+    }
+}
+
+@media(max-width: 540px){
+    .main-container{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .card{
+        width: 90vw;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .top-img img{
+        width: 90vw;
+    }
+
+    .title{
+        margin-top: 20px;
+        font-size: calc(23rem/16);
+    }
+
+    .description{
+        width: 80%;
+        margin-top: 15px;
+        font-size: calc(15rem/16);
+    }
+
+    .order-plan{
+        width: 90%;
+        padding: 15px 0;
+    }
+
+    .plan-name{
+        font-size: calc(15rem/16);
+    }
+
+    .plan-price{
+        font-size: calc(15rem/16);
+    }
+
+    .change{
+        font-size: calc(14rem/16);
+    }
+
+    .button{
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .pattern-desktop{
+        display: none;
+    }
+
+    .payment-button{
+        font-size: calc(15rem/16);
+    }
+
+    .cancel-button{
+        font-size: calc(15rem/16);
+    }
+}

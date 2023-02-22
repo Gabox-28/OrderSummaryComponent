@@ -4,34 +4,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
   
-  <title>Frontend Mentor | Order summary card</title>
+  <title>Order summary card | Gabriel Mayorga</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+<main class="main-container">
+  <svg class="pattern-desktop" xmlns="http://www.w3.org/2000/svg" width="1440" height="437"><path fill="#D6E1FF" fill-rule="evenodd" d="M0 349.974c218.558 116.035 460.05 116.035 724.475 0s502.933-116.035 715.525 0V0H0v349.974z"/></svg>
+  <section class="card">
+    <div class="top-img">
+      <img src="./images/illustration-hero.svg" alt="Banner img">
+    </div>
 
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
+    <div class="order-content">
+      <h1 class="title">Order Summary</h1>
+      <p class="description">You can now listen to millions of songs, audibooks, and postcasts on any devicy anywhere you like!</p>
+      <div class="order-plan">
+        <div class="plan">
+          <img src="./images/icon-music.svg" alt="Icon music">
+          <div class="plan-description">
+            <span class="plan-name">Annual Plan</span>
+            <span class="plan-price">$59.99/year</span>
+          </div>
+        </div>
+        <a href="#" class="change">Change</a>
+      </div>
+      <a class="button" href="#">
+        <div class="payment-button">
+          Proceed to Payment
+        </div>
+      </a>
+      <a class="button" href="#">
+        <div class="cancel-button">
+          <span>Cancel order</span>
+        </div>
+      </a>
+    </div>
+  </section>
+</main>
   
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://gabrielmayorga.com/">Gabriel Mayorga</a>.
+  </footer>
 </body>
 </html>
